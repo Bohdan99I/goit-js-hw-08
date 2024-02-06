@@ -19,12 +19,12 @@ if (formValues) {
 function submitOn(event) {
   event.preventDefault();
   localStorage.clear();
-
   if (email.value === '' || message.value === '') {
     return console.log('Fill all fields!');
   }
 
   console.log(formValues);
+  
   event.currentTarget.reset();
 }
 
